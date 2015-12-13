@@ -1,2 +1,2 @@
-# isomorphic-react
-Isomorphic Web Application developed with NodeJS, ExpressJS and ReactJS
+# React Native App
+This is my first React Native App
