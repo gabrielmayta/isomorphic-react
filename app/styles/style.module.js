@@ -7,5 +7,7 @@
 "use strict";
 
 import Common               from "./common.style";
+import Buttons              from "./buttons.style";
 
-export { Common };
+
+export { Common, Buttons };
