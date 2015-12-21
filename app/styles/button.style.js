@@ -10,7 +10,7 @@ import React                         from "react-native";
 import { StyleSheet }                from "react-native";
 
 
-let Buttons = StyleSheet.create({
+let ButtonStyle = StyleSheet.create({
     btn: {
         flexDirection: "row",
         maxWidth: 200,
@@ -24,4 +24,4 @@ let Buttons = StyleSheet.create({
     }
 });
 
-export default Buttons;
+export default ButtonStyle;

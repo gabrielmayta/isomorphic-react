@@ -9,7 +9,7 @@
 import React                    from "react-native";
 import { Text, View }           from "react-native";
 import { Button }               from "../../components/components.module";
-import { Common }               from "../../styles/style.module";
+import { Common }               from "../../styles/styles.module";
 
 
 class Home extends React.Component {

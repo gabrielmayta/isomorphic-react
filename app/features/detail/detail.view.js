@@ -8,7 +8,7 @@
 
 import React                                            from "react-native";
 import { Text, View, TouchableHighlight }               from "react-native";
-import { Common }                                       from "../../styles/style.module"
+import { Common }                                       from "../../styles/styles.module"
 
 
 class Detail extends React.Component {

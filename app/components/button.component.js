@@ -8,7 +8,7 @@
 
 import React                                        from "react-native";
 import { View, Text, TouchableHighlight }           from "react-native";
-import { Buttons }                                  from "../styles/style.module";
+import { ButtonStyle }                              from "../styles/styles.module";
 
 
 class Button extends React.Component {
@@ -28,7 +28,7 @@ class Button extends React.Component {
 
     render() {
         return (
-            <TouchableHighlight onPress={this.goTo.bind(this)} style={[Buttons.btn]}>
+            <TouchableHighlight onPress={this.goTo.bind(this)} style={[ButtonStyle.btn]}>
                 <View>
                     <Text>{this.state.label}</Text>
                 </View>
