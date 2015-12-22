@@ -7,5 +7,6 @@
 "use strict";
 
 import Button               from "./button.component";
+import Card                 from "./card.component";
 
-export { Button };
+export { Button, Card };

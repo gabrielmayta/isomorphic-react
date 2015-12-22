@@ -8,6 +8,7 @@
 
 import Common                  from "./common.style";
 import ButtonStyle             from "./button.style";
+import CardStyle               from "./card.style";
 
 
-export { Common, ButtonStyle };
+export { Common, ButtonStyle, CardStyle };
