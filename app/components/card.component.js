@@ -18,16 +18,15 @@ class Card extends React.Component {
             name: props.name,
             image: props.image
         };
-        
-        console.log(this.state);
     };
 
     render() {
         return (
-            <TouchableHighlight>
+            <TouchableHighlight style={CardStyle.container}>
                 <View>
-                    <Text>{this.state.name}</Text>
-                    <Image style={CardStyle.default} source={{uri: this.state.image}}/>
+                    <Image style={CardStyle.image} source={{uri: this.state.image}}>
+                        <Text style={CardStyle.text}>{this.state.name}</Text>
+                    </Image>
                 </View>
             </TouchableHighlight>
         );

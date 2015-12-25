@@ -23,12 +23,11 @@ class Home extends React.Component {
         };
     };
     
-    componentDidMount(){
-      console.log(this.state);  
-    };
-    
     renderCard(item) {
-        return <Card name={item.name} image={item.thumbnail.path + '.' + item.thumbnail.extension}/>;
+        if(item.thumbnail.path.indexOf("image_not_available") === -1) 
+            return <Card name={item.name} image={item.thumbnail.path + '.' + item.thumbnail.extension}/>;
+        else 
+            return null;
     };
 
     render() {
