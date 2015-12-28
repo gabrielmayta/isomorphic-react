@@ -6,32 +6,35 @@
 
 "use strict";
 
-import React                                            from "react-native";
-import { Text, View, TouchableHighlight }               from "react-native";
-import { Common }                                       from "../../styles/styles.module"
+import React                                                   from "react-native";
+import { Text, View, TouchableHighlight, Image }               from "react-native";
+import { Common }                                              from "../../styles/styles.module"
 
 
 class Detail extends React.Component {
 
-    constructor() {
+    constructor(props) {
         super();
-        this.goToHome = this.goToHome.bind(this);
+        var response = require("./mocks/character.json");
+        this.state = {
+          responseData: response.data.results,
+          navigator: props.navigator
+        };
     };
-
-    goToHome() {
-        console.log(this.props.navigator);
-        this.props.navigator.jumpBack()
+    
+    componentDidMount() {
+      console.log(this.state.responseData);
+    };
+    
+    navigation() {
+        this.state.navigator.pop();
     };
 
     render() {
         return (
             <View style={Common.container}>
-                <Text>Welcome to Page 2!</Text>
-                <TouchableHighlight onPress={this.goToHome}>
-                    <View>
-                        <Text>Torna indietro</Text>
-                    </View>
-                </TouchableHighlight>
+                <Image style={Common.imageLarge} 
+                       source={{uri: this.state.responseData.thumbnail.path + "." + this.state.responseData.thumbnail.extension}}/>
             </View>
         );
     };

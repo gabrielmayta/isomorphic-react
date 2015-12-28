@@ -10,7 +10,6 @@ import React                                from "react-native";
 import { Navigator }                        from "react-native";
 import * as Features                        from "../features/features.module";
 
-
 class Routes extends React.Component {
 
     currentRoute(route, navigator) {
@@ -28,6 +27,7 @@ class Routes extends React.Component {
     };
 
     render() {
+        var test = this.navigationBar;
         return (
             <Navigator initialRoute={{id: "home"}} renderScene={this.currentRoute}/>
         );

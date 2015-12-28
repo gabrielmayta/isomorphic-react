@@ -25,14 +25,19 @@ class Home extends React.Component {
     
     renderCard(item) {
         if(item.thumbnail.path.indexOf("image_not_available") === -1) 
-            return <Card name={item.name} image={item.thumbnail.path + '.' + item.thumbnail.extension}/>;
+            return <Card id={item.id} 
+                         name={item.name} 
+                         image={item.thumbnail.path + '.' + item.thumbnail.extension} 
+                         navigator={this.props.navigator}/>;
         else 
             return null;
     };
 
     render() {
         return (
-            <ListView dataSource={this.state.dataSource} renderRow={this.renderCard}/>
+            <ListView dataSource={this.state.dataSource} 
+                      renderRow={this.renderCard.bind(this)} 
+                      style={Common.topBar}/>
         );
     };
 
