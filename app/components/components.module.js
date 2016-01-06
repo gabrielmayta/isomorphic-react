@@ -8,5 +8,6 @@
 
 import Button               from "./button.component";
 import Card                 from "./card.component";
+import Header               from "./header.component";
 
-export { Button, Card };
+export { Button, Card, Header };
