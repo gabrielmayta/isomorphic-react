@@ -15,6 +15,9 @@ let Common = StyleSheet.create({
         flex: 1,
         backgroundColor: "#f0f0f0"
     },
+    mainBackground: {
+        backgroundColor: "#000000"
+    },
     imageSmall: {
         width: 60,
         height: 60,
