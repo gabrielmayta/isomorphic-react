@@ -8,7 +8,8 @@
 
 import React                                                   from "react-native";
 import { Text, View, TouchableHighlight, Image }               from "react-native";
-import { Common }                                              from "../../styles/styles.module"
+import { Common }                                              from "../../styles/styles.module";
+import { Header }                                              from "../../components/components.module";
 
 
 class Detail extends React.Component {
@@ -33,6 +34,7 @@ class Detail extends React.Component {
     render() {
         return (
             <View style={Common.container}>
+                <Header/>
                 <Image style={Common.imageLarge} 
                        source={{uri: this.state.responseData.thumbnail.path + "." + this.state.responseData.thumbnail.extension}}/>
             </View>
