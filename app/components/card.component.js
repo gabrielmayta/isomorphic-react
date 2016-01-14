@@ -33,9 +33,8 @@ class Card extends React.Component {
         return (
             <TouchableHighlight onPress={this.navigation.bind(this, this.state.id)} style={CardStyle.container}>
                 <View>
-                    <Image style={CardStyle.image} source={{uri: this.state.image}}>
-                        <Text style={CardStyle.text}>{this.state.name}</Text>
-                    </Image>
+                    <Image style={CardStyle.image} source={{uri: this.state.image}}/>
+                    <Text style={CardStyle.text}>{this.state.name}</Text>
                 </View>
             </TouchableHighlight>
         );

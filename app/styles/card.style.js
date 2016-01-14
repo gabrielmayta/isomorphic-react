@@ -12,10 +12,14 @@ import { StyleSheet }                from "react-native";
 
 let CardStyle = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        borderStyle: "solid",
+        borderColor: "#FFFFFF",
+        borderBottomWidth: 0.5
     },
     image: {
-        height: 180,
+        height: 220,
+        opacity: 0.6,
         resizeMode: "cover"
     },
     text: {
